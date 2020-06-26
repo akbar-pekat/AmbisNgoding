@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMBISNGODING.XYZ IS RUNNING</title>
+  <link rel="shortcut icon" href="fav.png">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style media="screen">
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  .dot {
+    height: 9px;
+    width: 9px;
+    background-color: #0F0;
+    border-radius: 50%;
+    display: inline-block;
+    animation: blinker 1s linear infinite;
+  }
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  </style>
+</head>
+<body>
+  <h6>AMBISNGODING.XYZ IS RUNNING <span class="dot"></span></h6>
+</body>
+<script>
+  var d = new Date();
+  var n = d.getTime();
+  console.log("AMBISNGODING.XYZ IS RUNNING @"+n);
+</script>
+</html>
