@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <script data-ad-client="ca-pub-4160323530502416" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
   <div class="load-box">
@@ -44,13 +45,30 @@
       <script>
         document.write(new Date().getFullYear())
       </script>
-      AmbisAcademy All Rights Reserved. | Made with <span style="color: #de0029;">&#9829;</span> in Makassar, Indonesia
+      AmbisAcademy All Rights Reserved.<br>Made with <span style="color: #de0029;">&#9829;</span> in Makassar, Indonesia
     </small>
   </div>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyC1B9Bq-otafSskeRn_KIZfVqyL2bcZaq0",
+      authDomain: "ambisngoding.firebaseapp.com",
+      databaseURL: "https://ambisngoding.firebaseio.com",
+      projectId: "ambisngoding",
+      storageBucket: "ambisngoding.appspot.com",
+      messagingSenderId: "701014096540",
+      appId: "1:701014096540:web:4fb3f8f728893c863b4b59",
+      measurementId: "G-9TQR1LNV5S"
+    };
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script>
+  firebase.analytics().logEvent('notification_received');
   $(document).ready(function() {
     $(".load-box").delay(2500).fadeOut("slow")
   });
