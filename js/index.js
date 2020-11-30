@@ -100,13 +100,6 @@ function moveTouch(e) {
   e.preventDefault();
 }
 
-/*const ptr = PullToRefresh.init({
-  mainElement: 'body',
-  onRefresh() {
-    window.location.reload();
-  }
-});*/
-
 var items = ["Nasi Goreng", "Tempe Bacem", "Sup Kentang Wortel", "Nasi Kucing", "Nasi Krawu", "Tempe Goreng Tepung", "Oseng-oseng Tempe", "Sup Bakso Ikan"];
 
 autocomplete(document.getElementById("searchinput"), items);
