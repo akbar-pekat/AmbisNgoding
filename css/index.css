@@ -15,6 +15,12 @@ nav {
 nav .logo img {
   height: 40px;
 }
+nav .group {
+  display: flex;
+}
+nav .group #sidebar {
+  margin-left: .8rem;
+}
 
 .shape {
   width: 100%;
@@ -81,7 +87,7 @@ nav .logo img {
 }
 
 .searchbox {
-  margin: 0 2rem;
+  margin: 1rem 1rem 0;
   padding: 0 .5rem;
   background-color: #F5F5F5;
   border-radius: 15px;
@@ -98,11 +104,53 @@ nav .logo img {
   font-size: .8rem;
   outline: none;
 }
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  display: none;
+.searchbox form {
+  width: 100%;
+}
+.autocomplete {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #FFFFFF;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 0;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  margin: .3rem 0;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #D4D4D4;
+  background-color: white;
+}
+.autocomplete-items div:hover {
+  background-color: #E9E9E9;
+}
+.autocomplete-active {
+  background-color: DodgerBlue!important;
+  color: #FFFFFF;
+}
+
+.pagesearch {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  position: fixed;
+  z-index: 2;
+  transition: all .3s ease;
+}
+.pagesearch .content {
+  padding: 1rem;
 }
 
 .menu .text {
