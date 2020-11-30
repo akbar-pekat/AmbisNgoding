@@ -107,6 +107,6 @@ function moveTouch(e) {
   }
 });*/
 
-var items = ["Nasi Goreng", "Tempe Bacem", "Sup Kentang Wortel", "Nasi Kucing", "Nasi Krawu"];
+var items = ["Nasi Goreng", "Tempe Bacem", "Sup Kentang Wortel", "Nasi Kucing", "Nasi Krawu", "Tempe Goreng Tepung", "Oseng-oseng Tempe", "Sup Bakso Ikan"];
 
 autocomplete(document.getElementById("searchinput"), items);
