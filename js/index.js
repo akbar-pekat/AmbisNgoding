@@ -16,14 +16,14 @@ $("#recipeone").click(function() {
   $(".openrecipe").css("bottom", "0px");
   $("#sidebar").toggle();
   $("#closerecipe").toggle();
-  $("#searchicon").toggle();
+  $("#searchicon").hide();
 });
 $("#closerecipe").click(function() {
   setro = 0;
   $(".openrecipe").css("bottom", "-90%");
   $("#sidebar").toggle();
   $("#closerecipe").toggle();
-  $("#searchicon").toggle();
+  $("#searchicon").show();
 });
 
 var setosb;
@@ -85,6 +85,7 @@ function moveTouch(e) {
         $(".openrecipe").css("bottom", "-90%");
         $("#sidebar").toggle();
         $("#closerecipe").toggle();
+        $("#searchicon").show();
       } else if (setosb == 1) {
         setosb = 0;
         $(".pagesearch").css("bottom", "-100%");
