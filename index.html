@@ -15,6 +15,9 @@
       <img src="img/logo.png" alt="Logo" />
     </div>
     <div class="group">
+      <div class="menu" id="searchicon">
+        <svg class="icon line" width="24" height="24" id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="10" cy="10" r="7" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></circle><line x1="21" y1="21" x2="15" y2="15" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></line></svg>
+      </div>
       <div class="menu" id="sidebar">
         <svg class="icon glyph" width="24" height="24" id="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21,19H9a1,1,0,0,1,0-2H21a1,1,0,0,1,0,2Z" style="fill: rgb(0, 0, 0);"></path><path d="M21,13H3a1,1,0,0,1,0-2H21a1,1,0,0,1,0,2Z" style="fill: rgb(0, 0, 0);"></path><path d="M15,7H3A1,1,0,0,1,3,5H15a1,1,0,0,1,0,2Z" style="fill: rgb(0, 0, 0);"></path></svg>
       </div>
@@ -59,9 +62,28 @@
       </ul>
     </div>
   </div>
-  <div class="searchbox">
-    <i class="uil uil-search"></i>
-    <input type="search" id="searchinput" placeholder="Halo Akbar, mau masak apa hari ini?" />
+  <div class="pagesearch">
+    <nav>
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo" />
+      </div>
+      <div class="group">
+        <div class="menu" id="closesearchbox">
+          <svg class="icon glyph" width="24" height="24" id="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.41,12l6.3-6.29a1,1,0,1,0-1.42-1.42L12,10.59,5.71,4.29A1,1,0,0,0,4.29,5.71L10.59,12l-6.3,6.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l6.29,6.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z" style="fill: rgb(0, 0, 0);"></path></svg>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <h2>Mau cari resep atau bahan apa?</h2>
+      <div class="searchbox">
+        <i class="uil uil-search"></i>
+        <form autocomplete="off" action="/action_page.php">
+          <div class="autocomplete">
+            <input id="searchinput" type="text" name="searchinput" placeholder="Tulis disini yah...">
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
   <div class="menu">
     <div class="text">
@@ -156,6 +178,7 @@
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
   <script src="js/index.umd.min.js"></script>
+  <script src="js/autocomplete.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/index.js"></script>
 </body>
 </html>
