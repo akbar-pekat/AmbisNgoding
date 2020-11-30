@@ -16,12 +16,25 @@ $("#recipeone").click(function() {
   $(".openrecipe").css("bottom", "0px");
   $("#sidebar").toggle();
   $("#closerecipe").toggle();
+  $("#searchicon").toggle();
 });
 $("#closerecipe").click(function() {
   setro = 0;
   $(".openrecipe").css("bottom", "-90%");
   $("#sidebar").toggle();
   $("#closerecipe").toggle();
+  $("#searchicon").toggle();
+});
+
+var setosb;
+$("#searchicon").click(function() {
+  setosb = 1;
+  $(".pagesearch").css("bottom", "0px");
+});
+$("#closesearchbox").click(function() {
+  setosb = 0;
+  $(".pagesearch").css("bottom", "-100%");
+  $("#searchinput").val("");
 });
 
 var container = document.querySelector("html");
@@ -72,6 +85,10 @@ function moveTouch(e) {
         $(".openrecipe").css("bottom", "-90%");
         $("#sidebar").toggle();
         $("#closerecipe").toggle();
+      } else if (setosb == 1) {
+        setosb = 0;
+        $(".pagesearch").css("bottom", "-100%");
+        $("#searchinput").val("");
       } else {
         //down
       }
@@ -81,3 +98,14 @@ function moveTouch(e) {
   initialY = null;
   e.preventDefault();
 }
+
+/*const ptr = PullToRefresh.init({
+  mainElement: 'body',
+  onRefresh() {
+    window.location.reload();
+  }
+});*/
+
+var items = ["Nasi Goreng", "Tempe Bacem", "Sup Kentang Wortel", "Nasi Kucing", "Nasi Krawu"];
+
+autocomplete(document.getElementById("searchinput"), items);
