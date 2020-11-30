@@ -107,11 +107,18 @@ nav .group #sidebar {
 .searchbox form {
   width: 90%;
 }
-.searchbox button {
-  padding: .5rem;
-  background-color: #F5F5F5;
+.searchbox .btn {
+  padding: .5rem .6rem;
+  background-color: #4361EE;
+  color: white;
   border-radius: 15px;
   border: 0;
+  transition: all .3s ease;
+}
+.searchbox .btn:hover,.btn:focus {
+  padding: .5rem .6rem;
+  background-color: #4361EE;
+  outline: none;
 }
 .autocomplete {
   width: 100%;
