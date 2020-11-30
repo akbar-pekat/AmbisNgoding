@@ -87,7 +87,7 @@ nav .group #sidebar {
 }
 
 .searchbox {
-  margin: 1rem 1rem 0;
+  margin: 1rem 0 0;
   padding: 0 .5rem;
   background-color: #F5F5F5;
   border-radius: 15px;
@@ -96,7 +96,7 @@ nav .group #sidebar {
   align-items: center;
 }
 .searchbox input {
-  width: 100%;
+  width: 90%;
   margin-left: .5rem;
   padding: .8rem 0;
   background-color: transparent;
@@ -105,7 +105,13 @@ nav .group #sidebar {
   outline: none;
 }
 .searchbox form {
-  width: 100%;
+  width: 90%;
+}
+.searchbox button {
+  padding: .5rem;
+  background-color: #F5F5F5;
+  border-radius: 15px;
+  border: 0;
 }
 .autocomplete {
   width: 100%;
@@ -118,18 +124,16 @@ input[type=submit] {
 }
 .autocomplete-items {
   position: absolute;
-  border: 0;
   z-index: 99;
   top: 100%;
   left: 0;
   right: 0;
 }
 .autocomplete-items div {
-  margin: .3rem 0;
+  border-bottom: 1px solid #D5D5D5;
+  margin: 0;
   padding: 10px;
   cursor: pointer;
-  border-radius: 5px;
-  border: 1px solid #D4D4D4;
   background-color: white;
 }
 .autocomplete-items div:hover {
@@ -150,7 +154,7 @@ input[type=submit] {
   transition: all .3s ease;
 }
 .pagesearch .content {
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 .menu .text {
