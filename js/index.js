@@ -1,105 +1,89 @@
-var setsb;
-$("#sidebar").click(function() {
-  setsb = 1;
-  $(".sidebar").css("right", "0px");
-  $(".shape").fadeIn();
+var mySwiper = new Swiper('.swiper-container', {
+  direction: 'horizontal',
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  autoplay: {
+    delay: 3000,
+  },
+})
+
+var categorysection;
+$("#itemsmore").click(function() {
+  categorysection = 1;
+  $(".category-section").css("bottom", "0px");
+  $(".shadow").fadeIn();
 });
-$(".shape").click(function() {
-  setsb = 0;
-  $(".sidebar").css("right", "-13rem");
-  $(".shape").fadeOut();
+$(".categorys .group .items").click(function() {
+  categorysection = 0;
+  $(".category-section").css("bottom", "-30%");
+  $("#title-container").text(this.innerText);
+  $('.category .group .items').removeClass("active");
+  $(".shadow").fadeOut();
 });
 
-var setro;
-$("#recipeone").click(function() {
-  setro = 1;
-  $(".openrecipe").css("bottom", "0px");
-  $("#sidebar").toggle();
-  $("#closerecipe").toggle();
-  $("#searchicon").hide();
-});
-$("#closerecipe").click(function() {
-  setro = 0;
-  $(".openrecipe").css("bottom", "-90%");
-  $("#sidebar").toggle();
-  $("#closerecipe").toggle();
-  $("#searchicon").show();
-});
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchmove', handleTouchMove, false);
+var xDown = null;
+var yDown = null;
 
-var setosb;
-$("#searchicon").click(function() {
-  setosb = 1;
-  $(".pagesearch").css("bottom", "0px");
-});
-$("#closesearchbox").click(function() {
-  setosb = 0;
-  $(".pagesearch").css("bottom", "-100%");
-  $("#searchinput").val("");
-});
-
-var container = document.querySelector("html");
-container.addEventListener("touchstart", startTouch, false);
-container.addEventListener("touchmove", moveTouch, false);
-
-var initialX = null;
-var initialY = null;
-
-function startTouch(e) {
-  initialX = e.touches[0].clientX;
-  initialY = e.touches[0].clientY;
+function handleTouchStart(evt) {
+  xDown = evt.touches[0].clientX;
+  yDown = evt.touches[0].clientY;
 }
 
-function moveTouch(e) {
-  if (initialX === null) {
+function handleTouchMove(evt) {
+  if (! xDown || ! yDown) {
     return;
   }
+  var xUp = evt.touches[0].clientX;
+  var yUp = evt.touches[0].clientY;
+  var xDiff = xDown - xUp;
+  var yDiff = yDown - yUp;
 
-  if (initialY === null) {
-    return;
-  }
-
-  var currentX = e.touches[0].clientX;
-  var currentY = e.touches[0].clientY;
-
-  var diffX = initialX - currentX;
-  var diffY = initialY - currentY;
-
-  if (Math.abs(diffX) > Math.abs(diffY)) {
-    if (diffX > 0) {
-      //left
+  if (Math.abs(xDiff) > Math.abs(yDiff)) {
+    if (xDiff > 0) {
+      /* left swipe */
     } else {
-      if (setsb == 1) {
-        setsb = 0;
-        $(".sidebar").css("right", "-13rem");
-        $(".shape").fadeOut();
-      } else {
-        //right
-      }
+      /* right swipe */
     }
   } else {
-    if (diffY > 0) {
-      //up
+    if (yDiff > 0) {
+      /* up swipe */
     } else {
-      if (setro == 1) {
-        setro = 0;
-        $(".openrecipe").css("bottom", "-90%");
-        $("#sidebar").toggle();
-        $("#closerecipe").toggle();
-        $("#searchicon").show();
-      } else if (setosb == 1) {
-        setosb = 0;
-        $(".pagesearch").css("bottom", "-100%");
-        $("#searchinput").val("");
-      } else {
-        //down
+      /* down swipe */
+      if (categorysection == 1) {
+        categorysection = 0;
+        $(".category-section").css("bottom", "-30%");
+        $(".shadow").fadeOut();
       }
     }
   }
-  initialX = null;
-  initialY = null;
-  e.preventDefault();
+  xDown = null;
+  yDown = null;
 }
 
-var items = ["Nasi Goreng", "Tempe Bacem", "Sup Kentang Wortel", "Nasi Kucing", "Nasi Krawu", "Tempe Goreng Tepung", "Oseng-oseng Tempe", "Sup Bakso Ikan"];
+$('.category .group .items').click(function() {
+  $('.category .group .items').removeClass("active");
+  $("#title-container").text(this.innerText);
+  $(this).addClass("active");
+});
 
-autocomplete(document.getElementById("searchinput"), items);
+$(document).ready(function() {
+  $(".category-section .content .categorys .group .items").css("animation", "none");
+  $(".category-section .content .categorys .group .items").css("background", "transparent");
+});
+
+window.onscroll = function() {
+  myFunction()};
+
+var category = document.getElementById("category");
+var sticky = category.offsetTop;
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    category.classList.add("sticky");
+  } else {
+    category.classList.remove("sticky");
+  }
+}
