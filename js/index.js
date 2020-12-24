@@ -1,21 +1,21 @@
-$(".ios_bars").click(function() {
-  $(".bottombar").css("bottom", "15px");
-  $(".ios_bars").fadeOut();
+$(".bottom_bars").click(function() {
+  $(".bottom_container").css("bottom", "15px");
+  $(".bottom_bars").fadeOut();
 });
 
 $("#tnm_more").click(function() {
-  $(".modal_overflow").fadeIn();
+  $(".modal_container").fadeIn();
 });
 $("#understand").click(function() {
-  $(".modal_overflow").fadeOut();
+  $(".modal_container").fadeOut();
 });
 
 $(document).ready(function() {
   setTimeout(function() {
-    $(".loadingscreen").fadeOut();
-  }, 2000);
+    $(".loading_screen").fadeOut();
+  }, 3500);
 
-  $('.bottombar .content .items').click(function() {
+  $('.bottom_container .content .items').click(function() {
     $(this).siblings('.items').removeClass('active');
     $(this).addClass('active');
   });
@@ -53,12 +53,12 @@ function handleTouchMove(evt) {
   } else {
     if (yDiff > 0) {
       /* up swipe */
-      $(".bottombar").css("bottom", "-25%");
-      $(".ios_bars").fadeIn();
+      $(".bottom_container").css("bottom", "-25%");
+      $(".bottom_bars").fadeIn();
     } else {
       /* down swipe */
-      $(".bottombar").css("bottom", "15px");
-      $(".ios_bars").fadeOut();
+      $(".bottom_container").css("bottom", "15px");
+      $(".bottom_bars").fadeOut();
     }
   }
   xDown = null;
@@ -66,7 +66,7 @@ function handleTouchMove(evt) {
 }
 
 var macy = Macy({
-  container: '#groupproducts',
+  container: '#midnight-pro_container',
   trueOrder: true,
   waitForImages: true,
   margin: {
@@ -83,12 +83,23 @@ function imgError(image) {
   return true;
 }
 
-var promobox = $("#promobox");
-$("#promocon").scroll(function() {
+var te_cb100 = $("#te_cb100");
+$("#cb100").scroll(function() {
   if ($(this).scrollLeft() + $(this).innerWidth() >= 400) {
-    promobox.fadeOut();
+    te_cb100.fadeOut();
   } else {
-    promobox.fadeIn();
+    te_cb100.fadeIn();
+  }
+});
+var te_tiara = $("#te_tiara");
+var tce_tiara = $("#tce_tiara");
+$("#mbtiara").scroll(function() {
+  if ($(this).scrollLeft() + $(this).innerWidth() >= 400) {
+    te_tiara.fadeOut();
+    tce_tiara.fadeOut();
+  } else {
+    te_tiara.fadeIn();
+    tce_tiara.fadeIn();
   }
 });
 //$(this)[0].scrollWidth/3.7
