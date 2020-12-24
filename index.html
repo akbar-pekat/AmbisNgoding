@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!--Meta tag-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--CSS/Link tag-->
   <link rel="stylesheet" href="css/index.css">
-  <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/line.css">
-  <title>Blanja.in</title>
+  <link rel="manifest" href="manifest.json" />
   <link rel="shortcut icon" href="chrome/chrome-installprocess-128-128.png" type="image/x-icon" />
+  <title>Mangan</title>
 </head>
+
 <body>
-  <div class="loadingscreen">
-    <img src="https://miro.medium.com/max/1600/0*ptDX0HfJCYpo9Pcs.gif" alt="" />
+  <!--Loading-->
+  <div class="loading_screen">
+    <img src="loader.gif" alt="loading_img" />
   </div>
-  <div class="ios_bars"></div>
-  <div class="bottombar">
+
+  <!--Navbottom-->
+  <div class="bottom_bars"></div>
+  <div class="bottom_container">
     <div class="content">
       <div class="items active" data-name="Home">
         <i class="uil uil-apps"></i>
@@ -27,13 +34,14 @@
       </div>
     </div>
   </div>
-  <div class="modal_overflow">
+
+  <!--Modal-->
+  <div class="modal_container">
     <div class="modal">
       <div class="content">
         <h2>Cashback terms and conditions</h2>
         <ol>
           <li>This cashback promo is valid from the date 26 Nov-4 Des 2020</li>
-          <li>blablabla....</li>
         </ol>
         <br />
         <div class="button">
@@ -42,11 +50,13 @@
       </div>
     </div>
   </div>
+
+  <!--Wallet-->
   <div class="header">
-    <div class="wallet">
+    <div class="wallet_container">
       <div class="balance">
         <h2>Rp 546.000</h2>
-        <hr class="balance_hr" />
+        <hr class="wallet_lines" />
         <p>
           Rp 5000
         </p>
@@ -61,32 +71,77 @@
       </div>
     </div>
   </div>
-  <div class="category" hidden>
-    <div class="group">
+
+  <!--Product: Event-->
+  <div class="product">
+    <div class="thumbnail_event" id="te_tiara">
+      <img src="tiara.png" alt="" id="tiara" />
+    </div>
+    <div class="textcontent_event" id="tce_tiara">
+      <h2 class="h2">Tiara Andini</h2>
+    </div>
+    <div class="event_container" id="mbtiara">
       <div class="items">
-        <img src="banner_nasi.png" alt="banner" />
-        <h3>Nasi</h3>
+        <img src="https://fastly.4sqi.net/img/general/200x200/4665150_uD0oVyugNYPUzXXhQ31tWYKiUshoVdeiozPZcLPUmxs.jpg" onerror="imgError(this);" alt="Gambar" />
+        <div class="text">
+          <h3>Tteokbokki Korean</h3>
+          <small>Masak Bareng Tiara Andini</small>
+        </div>
       </div>
-      <div class="items">
-        <img src="banner_seafood.png" alt="banner" />
-        <h3>Seafood</h3>
+      <div class="more">
+        <div class="text">
+          <h3>Watch the video now<i class="uil uil-angle-right-b"></i></h3>
+        </div>
       </div>
-      <div class="items">
-        <img src="banner_roti.png" alt="banner" />
-        <h3>Roti</h3>
-      </div>
-      <div class="items">
-        <img src="banner_lain.png" alt="banner" />
-        <h3>Lainnya</h3>
-      </div>
-      <div class="lastitems"></div>
     </div>
   </div>
+  <br />
+
+  <!--Product: Normal-->
   <div class="product">
-    <div id="promobox">
-      <img src="https://accurateonline.id/wp-content/uploads/2020/11/Promo-Cashback-100.png" alt="" />
+    <h2>Midnight, hungry?</h2>
+    <small class="subtitle">Calm down, some are open 24 hours</small>
+    <div class="product_container" id="midnight-pro_container">
+      <div class="items">
+        <img src="https://www.indonesiakaya.com/uploads/_images_gallery/Nasi_kuning_dan_berbagai_lauk_pendukungnya.jpg" onerror="imgError(this);" alt="Gambar" />
+        <div class="text">
+          <small>Nasi Kuning Bagadang • Pak Mus</small>
+          <h3>Rp 15000</h3>
+        </div>
+      </div>
+      <div class="items">
+        <img src="http://images.foodmento.com/U2228P4901F19671-1413867245-f13.jpg" onerror="imgError(this);" alt="Gambar" />
+        <div class="text">
+          <small>Nasi Goreng Merah • Warung Losari</small>
+          <h3>Rp 20000</h3>
+        </div>
+      </div>
+      <div class="items">
+        <img src="https://img.qraved.co/v2/image/data/1494847781887-12357688_204849953190382_802855418_n-m.jpg" onerror="imgError(this);" alt="Gambar" />
+        <div class="text">
+          <small>Coto Campur • Aroma Coto Gagak</small>
+          <h3>Rp 15000</h3>
+        </div>
+      </div>
+      <div class="items">
+        <img src="https://www.inibaru.id/nuploads/1/umum/1504517599101-mie_titi.jpg" onerror="imgError(this);" alt="Gambar" />
+        <div class="text">
+          <small>Mie Titi • Mie Titi Datu Museng</small>
+          <h3>Rp 25000</h3>
+        </div>
+      </div>
     </div>
-    <div class="group2" id="promocon">
+    <div class="product-btn_more">
+      <button>View more menu</button>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="thumbnail_event" id="te_cb100">
+      <img src="https://accurateonline.id/wp-content/uploads/2020/11/Promo-Cashback-100.png" alt="" />
+      <img src="tiara.png" alt="" hidden="true" />
+    </div>
+    <div class="event_container" id="cb100">
       <div class="items">
         <img src="https://fastly.4sqi.net/img/general/200x200/4665150_uD0oVyugNYPUzXXhQ31tWYKiUshoVdeiozPZcLPUmxs.jpg" onerror="imgError(this);" alt="Gambar" />
         <div class="text">
@@ -125,45 +180,8 @@
     </div>
   </div>
   <br />
-  <div class="product">
-    <h2>Midnight, hungry?</h2>
-    <small class="subtitle">Calm down, some are open 24 hours</small>
-    <div class="group" id="groupproducts">
-      <div class="items">
-        <img src="https://www.indonesiakaya.com/uploads/_images_gallery/Nasi_kuning_dan_berbagai_lauk_pendukungnya.jpg" onerror="imgError(this);" alt="Gambar" />
-        <div class="text">
-          <small>Nasi Kuning Bagadang • Pak Mus</small>
-          <h3>Rp 15000</h3>
-        </div>
-      </div>
-      <div class="items">
-        <img src="http://images.foodmento.com/U2228P4901F19671-1413867245-f13.jpg" onerror="imgError(this);" alt="Gambar" />
-        <div class="text">
-          <small>Nasi Goreng Merah • Warung Losari</small>
-          <h3>Rp 20000</h3>
-        </div>
-      </div>
-      <div class="items">
-        <img src="https://img.qraved.co/v2/image/data/1494847781887-12357688_204849953190382_802855418_n-m.jpg" onerror="imgError(this);" alt="Gambar" />
-        <div class="text">
-          <small>Coto Campur • Aroma Coto Gagak</small>
-          <h3>Rp 15000</h3>
-        </div>
-      </div>
-      <div class="items">
-        <img src="https://www.inibaru.id/nuploads/1/umum/1504517599101-mie_titi.jpg" onerror="imgError(this);" alt="Gambar" />
-        <div class="text">
-          <small>Mie Titi • Mie Titi Datu Museng</small>
-          <h3>Rp 25000</h3>
-        </div>
-      </div>
-    </div>
-    <div class="more">
-      <button>View more menu</button>
-    </div>
-  </div>
-  <hr class="hr2" />
-  <br />
+
+  <!--Script tag-->
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
   <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
