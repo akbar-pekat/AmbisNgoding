@@ -1,0 +1,21 @@
+{
+  "name": "Alamangan",
+  "short_name": "Alamangan",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#121212",
+  "orientation": "portrait-primary",
+  "icons": [{
+    "src": "chrome/chrome-extensionmanagementpage-48-48.png",
+    "sizes": "48x48"
+  },
+    {
+      "src": "chrome/chrome-favicon-16-16.png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "chrome/chrome-installprocess-128-128.png",
+      "sizes": "128x128"
+    }]
+}
