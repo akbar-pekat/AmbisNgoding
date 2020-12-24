@@ -6,24 +6,24 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.loadingscreen {
+.loading_screen {
   width: 100%;
   position: fixed;
   height: 100vh;
-  background-color: white;
+  background-color: #FFFAFC;
   z-index: 3;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.loadingscreen img {
+.loading_screen img {
   width: 100%;
 }
 
 .header {
   padding: 1.3rem 1rem;
 }
-.header .wallet {
+.header .wallet_container {
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -36,26 +36,30 @@
 
 .header .balance {
   padding: .5rem;
+  color: #EC4943;
 }
 .header .balance h2:before {
   content: "Balance";
   font-size: .8rem;
+  color: black;
   position: absolute;
   top: -5px;
   font-weight: 500;
 }
-.header .balance .balance_hr {
+.header .balance .wallet_lines {
   margin: .3rem 0;
   border: .1px solid lightgrey;
 }
 .header .balance p {
   font-size: .8rem;
   font-weight: 700;
+  color: #EC4943;
 }
 .header .balance p:before {
   content: "Bonus Balance: ";
   font-size: .8rem;
   font-weight: 500;
+  color: black;
 }
 
 .header .action {
@@ -67,8 +71,10 @@
   border-radius: 10px;
   background-color: #f5f5f5;
   font-size: 1.3rem;
+  color: #EC4943;
 }
 .header .action .history {
+  color: #EC4943;
   font-size: 1.3rem;
   margin: 0 .3rem;
   padding: .5rem;
@@ -76,7 +82,7 @@
   background-color: #f5f5f5;
 }
 
-.ios_bars {
+.bottom_bars {
   background-color: lightgrey;
   height: 5px;
   width: 50px;
@@ -88,7 +94,7 @@
   z-index: 2;
   display: none;
 }
-.bottombar {
+.bottom_container {
   width: auto;
   height: auto;
   background-color: white;
@@ -101,7 +107,7 @@
   transition: all .3s ease;
   border-radius: 50px;
 }
-.bottombar .content {
+.bottom_container .content {
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -110,40 +116,43 @@
   transition: all .3s ease;
   position: relative;
 }
-.bottombar .content .items {
+.bottom_container .content .items {
   padding: .5rem;
   font-weight: 500;
   font-size: 1rem;
   border-radius: 10px;
   transition: all .3s ease;
 }
-.bottombar .content .active > i {
+.bottom_container .content .active > i {
   visibility: hidden;
 }
-.bottombar .content .active:before {
+.bottom_container .content .active:before {
   content: attr(data-name);
   position: absolute;
   top: 35%;
   transform: translateX(0px);
   transition: all .3s ease;
+  font-weight: 500;
+  color: #EC4943;
 }
-.bottombar .content .active:after {
+.bottom_container .content .active:after {
   content: '';
   position: absolute;
   bottom: 15px;
   transform: translateX(-29px);
-  background-color: #121212;
+  background-color: #EC4943;
   border-radius: 50px;
   width: 8px;
   height: 8px;
   transition: all .3s ease;
 }
-.bottombar .content .items i {
+.bottom_container .content .items i {
   font-size: 1.5rem;
   margin: 0 .8rem;
+  color: black;
 }
 
-.modal_overflow {
+.modal_container {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -153,67 +162,32 @@
   z-index: 1;
   display: none;
 }
-.modal_overflow .modal {
+.modal_container .modal {
   margin: 2rem;
   height: auto;
   background-color: white;
   border-radius: 10px;
 }
-.modal_overflow .modal .content {
+.modal_container .modal .content {
   padding: 1rem;
 }
-.modal_overflow .modal .content ol {
+.modal_container .modal .content ol {
   margin-top: 1rem;
   list-style-type: none;
 }
-.modal_overflow .modal .content .button {
+.modal_container .modal .content .button {
   padding: .5rem 1rem 0;
   display: flex;
   justify-content: center;
 }
-.modal_overflow .modal .content .button button {
+.modal_container .modal .content .button button {
   padding: .6rem .7rem;
-  background-color: #121212;
+  background-color: #EC4943;
   color: white;
   border-radius: 50px;
   border: 0;
   outline: none;
   font-weight: 500;
-}
-
-hr {
-  margin: 0 1rem .5rem;
-  border: .1px solid lightgrey;
-}
-.hr2 {
-  margin: 0 1rem;
-  border: .1px solid transparent;
-}
-
-.category .group {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  overflow-x: scroll;
-}
-.category .group .items {
-  margin: .3rem 0 0 1rem;
-  min-width: 120px;
-  height: 70px;
-  background-color: white;
-  border-radius: 10px;
-  position: relative;
-}
-.category .group .items img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-.category .group .lastitems {
-  min-width: 1rem;
-  height: 50px;
-  background-color: transparent;
 }
 
 .product {
@@ -222,13 +196,13 @@ hr {
 .product h2, .product .subtitle {
   margin-left: 1rem;
 }
-.product .group {
+.product .product_container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.product .group .items {
+.product .product_container .items {
   margin: .5rem 1rem;
   width: 40%;
   max-width: 40%;
@@ -237,21 +211,21 @@ hr {
   border-radius: 10px;
   position: relative;
 }
-.product .group .items img {
+.product .product_container .items img {
   width: 100%;
   border-radius: 10px;
 }
-.product .group .items .text {
+.product .product_container .items .text {
   padding: 0 0 .5rem;
 }
-.product .more {
+.product .product-btn_more {
   padding: .5rem 1rem 1rem;
   display: flex;
   justify-content: center;
 }
-.product .more button {
+.product .product-btn_more button {
   padding: .6rem .7rem;
-  background-color: #121212;
+  background-color: #EC4943;
   color: white;
   border-radius: 50px;
   border: 0;
@@ -259,31 +233,56 @@ hr {
   font-weight: 500;
 }
 
-.product .group2 {
+.product .event_container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   overflow-x: scroll;
   margin-bottom: 1rem;
 }
-.product #promocon {
+.product #cb100 {
   background-color: #9732cc;
   padding-bottom: .5rem;
 }
-.product #promocon2 {
-  background-color: #a11ea0;
+.product #mbtiara {
+  background-color: #EC4943;
   padding-bottom: .5rem;
 }
-.product #promobox, #promobox2 {
+.product .thumbnail_event {
   height: 80%;
   width: 150px;
   position: absolute;
 }
-.product #promobox img, #promobox2 img {
+.product .thumbnail_event img {
   height: 150%;
   transform: translateY(-10px)translateX(-10px);
 }
-.product .group2 .items {
+.product .thumbnail_event #tiara {
+  height: 150%;
+  transform: translateY(-30px)translateX(-30px);
+}
+.product .textcontent_event {
+  position: absolute;
+  color: #EC4943;
+  padding: .3rem .3rem .3rem 0;
+  background-color: white;
+  text-align: center;
+  font-size: .9rem;
+  bottom: 0;
+  border-radius: 0 10px 0 0;
+}
+.product .textcontent_event .h2 {
+  transform: translateY(10px)translateX(-10px);
+}
+.product .textcontent_event:before {
+  content: "Masak Bareng ";
+  position: absolute;
+  color: #EC4943;
+  font-size: .8rem;
+  top: 5px;
+  left: 5px;
+}
+.product .event_container .items {
   margin: .5rem .5rem 0 1rem;
   background-color: #f5f5f5;
   border-radius: 10px;
@@ -293,10 +292,10 @@ hr {
   display: flex;
   justify-content: flex-start;
 }
-.product .group2 .items:first-child {
+.product .event_container .items:first-child {
   margin: .5rem .5rem 0 10.5rem;
 }
-.product .group2 .more {
+.product .event_container .more {
   margin: 0;
   padding: 0;
   padding-left: .5rem;
@@ -305,16 +304,16 @@ hr {
   background-color: transparent;
   color: white;
 }
-.product .group2 .lastitems {
+.product .event_container .lastitems {
   min-width: 1rem;
   height: 100px;
   background-color: transparent;
 }
-.product .group2 .items img {
+.product .event_container .items img {
   height: 100%;
   border-radius: 10px 0 0 10px;
 }
-.product .group2 .items .text {
+.product .event_container .items .text {
   padding: .5rem;
   min-width: 150px;
   max-width: 150px;
