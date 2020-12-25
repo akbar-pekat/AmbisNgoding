@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/line.css">
   <link rel="manifest" href="manifest.json" />
-  <link rel="shortcut icon" href="chrome/chrome-installprocess-128-128.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
 </head>
 
 <body>
@@ -206,16 +206,7 @@
   <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
   <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
   <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+  <script src="sw.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
-  <script type="text/javascript" charset="utf-8">
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", function() {
-        navigator.serviceWorker
-        .register("serviceWorker.js")
-        .then(res => console.log("service worker registered"))
-        .catch(err => console.log("service worker not registered", err))
-      })
-    }
-  </script>
 </body>
 </html>
