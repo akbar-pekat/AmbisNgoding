@@ -1,7 +1,8 @@
-var CACHE_NAME = 'mangan-cache-v1';
+var CACHE_NAME = 'mangan-cache-v2';
 var urlsToCache = [
   '/',
-  'index.html'
+  'index.html',
+  'auth.html'
 ];
 
 self.addEventListener('install', function(event) {

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!--Meta tag-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Primary Meta Tags -->
+  <title>[AUTH] Mangan - Platform Pesan Makanan Online</title>
+  <meta name="title" content="Mangan - Platform Pesan Makanan Online">
+  <meta name="description" content="Mangan adalah platform untuk memesan makanan maupun minuman secara online.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ambisngoding.xyz/">
+  <meta property="og:title" content="Mangan - Platform Pesan Makanan Online">
+  <meta property="og:description" content="Mangan adalah platform untuk memesan makanan maupun minuman secara online.">
+  <meta property="og:image" content="logo.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://ambisngoding.xyz/">
+  <meta property="twitter:title" content="Mangan - Platform Pesan Makanan Online">
+  <meta property="twitter:description" content="Mangan adalah platform untuk memesan makanan maupun minuman secara online.">
+  <meta property="twitter:image" content="logo.png">
+
+  <!--CSS/Link tag-->
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/line.css">
+  <link rel="manifest" href="manifest.json" />
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+</head>
+<body>
+  <!--Loading-->
+  <div class="loading_screen">
+    <img src="img/loader.gif" alt="loading_img" />
+  </div>
+
+  <div class="logo">
+    <img src="img/logo.png" alt="Logo" />
+  </div>
+
+  <div class="circle"></div>
+  <div class="circle2"></div>
+
+  <div class="signin">
+    <div class="field_container">
+      <form accept-charset="utf-8">
+        <div class="form_group field">
+          <input type="email" class="form_field" placeholder="Email" name="email" id='email_signin' required />
+          <label for="email_signin" class="form_label">Email</label>
+        </div>
+        <div class="form_group field">
+          <input type="password" class="form_field" placeholder="Kata Sandi" name="password" id='password_signin' required />
+          <label for="password_signin" class="form_label">Kata Sandi</label>
+        </div>
+      </form>
+      <div class="button">
+        <button class="tobtn" id="toSignUp">Daftar</button>
+        <button class="actionbtn" id="actMasuk">Masuk</button>
+      </div>
+      <div class="note">
+        <small>Lupa akun? <span>Klik disini</span> untuk bantuan.</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="signup">
+    <div class="field_container">
+      <form accept-charset="utf-8">
+        <div class="form_group field">
+          <input type="text" class="form_field" placeholder="Nama Pengguna" name="username" id='username_signup' required />
+          <label for="username_signup" class="form_label">Nama Pengguna</label>
+        </div>
+        <div class="form_group field">
+          <input type="email" class="form_field" placeholder="Email" name="email" id='email_signup' required />
+          <label for="email_signup" class="form_label">Email</label>
+        </div>
+        <div class="form_group field">
+          <input type="password" class="form_field" placeholder="Kata Sandi" name="password" id='password_signup' required />
+          <label for="password_signup" class="form_label">Kata Sandi</label>
+        </div>
+        <div class="form_group field">
+          <input type="password" class="form_field" placeholder="Ulangi Kata Sandi" name="repassword" id='repassword_signup' required />
+          <label for="repassword_signup" class="form_label">Ulangi Kata Sandi</label>
+        </div>
+      </form>
+      <div class="button">
+        <button class="tobtn" id="toSignIn">Masuk</button>
+        <button class="actionbtn" id="actDaftar">Daftar</button>
+      </div>
+      <div class="note">
+        <small>Dengan menekan tombol Daftar, samu menyetujui <span>Disclaimer, Kebijakan Privasi serta Syarat dan Ketentuan</span> dari Mangan.</small>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal-->
+  <div class="loadingauth_container">
+    <div class="loader">
+      <div id="circularG">
+        <div id="circularG_1" class="circularG"></div>
+        <div id="circularG_2" class="circularG"></div>
+        <div id="circularG_3" class="circularG"></div>
+        <div id="circularG_4" class="circularG"></div>
+        <div id="circularG_5" class="circularG"></div>
+        <div id="circularG_6" class="circularG"></div>
+        <div id="circularG_7" class="circularG"></div>
+        <div id="circularG_8" class="circularG"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Script tag-->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+  <script src="sw.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/auth.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
