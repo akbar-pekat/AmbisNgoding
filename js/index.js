@@ -105,7 +105,7 @@ $("#mbtiara").scroll(function() {
 //$(this)[0].scrollWidth/3.7
 
 tippy('#history', {
-  content: "History",
+  content: "Riwayat",
 });
 tippy('#topup', {
   content: "Top-Up",
