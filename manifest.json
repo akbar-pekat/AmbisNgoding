@@ -1,21 +1,32 @@
 {
-  "name": "Alamangan",
-  "short_name": "Alamangan",
-  "start_url": "index.html",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#121212",
-  "orientation": "portrait-primary",
-  "icons": [{
-    "src": "chrome/chrome-extensionmanagementpage-48-48.png",
-    "sizes": "48x48"
-  },
-    {
-      "src": "chrome/chrome-favicon-16-16.png",
-      "sizes": "16x16"
-    },
-    {
-      "src": "chrome/chrome-installprocess-128-128.png",
-      "sizes": "128x128"
-    }]
+    "theme_color": "#EC4943",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "index.html",
+    "start_url": "index.html",
+    "app_name": "Mangan - Platform Pesan Makanan Online",
+    "short_name": "Mangan",
+    "description": "Mangan adalah platform untuk memesan makanan maupun minuman secara online",
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
 }

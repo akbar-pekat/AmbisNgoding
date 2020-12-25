@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <!--Meta tag-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Mangan - Platform Pesan Makanan Online</title>
+  <meta name="title" content="Mangan - Platform Pesan Makanan Online">
+  <meta name="description" content="Mangan adalah platform untuk memesan makanan maupun minuman secara online.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ambisngoding.xyz/">
+  <meta property="og:title" content="Mangan - Platform Pesan Makanan Online">
+  <meta property="og:description" content="Mangan adalah platform untuk memesan makanan maupun minuman secara online.">
+  <meta property="og:image" content="logo.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://ambisngoding.xyz/">
+  <meta property="twitter:title" content="Mangan - Platform Pesan Makanan Online">
+  <meta property="twitter:description" content="Mangan adalah platform untuk memesan makanan maupun minuman secara online.">
+  <meta property="twitter:image" content="logo.png">
 
   <!--CSS/Link tag-->
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/line.css">
   <link rel="manifest" href="manifest.json" />
   <link rel="shortcut icon" href="chrome/chrome-installprocess-128-128.png" type="image/x-icon" />
-  <title>Mangan</title>
 </head>
 
 <body>
@@ -23,13 +41,13 @@
   <div class="bottom_bars"></div>
   <div class="bottom_container">
     <div class="content">
-      <div class="items active" data-name="Home">
+      <div class="items active" data-name="Beranda">
         <i class="uil uil-apps"></i>
       </div>
-      <div class="items" data-name="Orders">
+      <div class="items" data-name="Pesanan">
         <i class="uil uil-receipt"></i>
       </div>
-      <div class="items" data-name="Profile">
+      <div class="items" data-name="Akun">
         <i class="uil uil-user"></i>
       </div>
     </div>
@@ -39,13 +57,15 @@
   <div class="modal_container">
     <div class="modal">
       <div class="content">
-        <h2>Cashback terms and conditions</h2>
+        <h2>Syarat & Ketentuan Promo</h2>
         <ol>
-          <li>This cashback promo is valid from the date 26 Nov-4 Des 2020</li>
+          <li>Promo Cashback 100% hadir kembali selama periode 26 November hingga 4 Des 2020, buruan belanja sekarang dan dapatkan cashback nya</li>
+          <br />
+          <li>Promo Cashback 100% berlaku untuk restoran partner yang bergabung dalam campaign saja</li>
         </ol>
         <br />
         <div class="button">
-          <button id="understand">Understand</button>
+          <button id="understand">Oke siap</button>
         </div>
       </div>
     </div>
@@ -82,7 +102,7 @@
     </div>
     <div class="event_container" id="mbtiara">
       <div class="items">
-        <img src="https://fastly.4sqi.net/img/general/200x200/4665150_uD0oVyugNYPUzXXhQ31tWYKiUshoVdeiozPZcLPUmxs.jpg" onerror="imgError(this);" alt="Gambar" />
+        <img src="https://www.seriouseats.com/2014/03/20200302-tteokbokki-vicky-wasik-750x563.jpg" onerror="imgError(this);" alt="Gambar" />
         <div class="text">
           <h3>Tteokbokki Korean</h3>
           <small>Masak Bareng Tiara Andini</small>
@@ -90,7 +110,7 @@
       </div>
       <div class="more">
         <div class="text">
-          <h3>Watch the video now<i class="uil uil-angle-right-b"></i></h3>
+          <h3>Ayo mulai masaknya<i class="uil uil-angle-right-b"></i></h3>
         </div>
       </div>
     </div>
@@ -99,43 +119,43 @@
 
   <!--Product: Normal-->
   <div class="product">
-    <h2>Midnight, hungry?</h2>
-    <small class="subtitle">Calm down, some are open 24 hours</small>
+    <h2>Udah malam, tapi pengen makan?</h2>
+    <small class="subtitle">Tenang, kan ada yang buka 24 jam</small>
     <div class="product_container" id="midnight-pro_container">
       <div class="items">
         <img src="https://www.indonesiakaya.com/uploads/_images_gallery/Nasi_kuning_dan_berbagai_lauk_pendukungnya.jpg" onerror="imgError(this);" alt="Gambar" />
         <div class="text">
           <small>Nasi Kuning Bagadang • Pak Mus</small>
+          <h3>Rp 12000</h3>
+        </div>
+      </div>
+      <div class="items">
+        <img src="https://img-global.cpcdn.com/recipes/426232d8fd70e88f/1502x1064cq70/nasi-goreng-ala-kaki-lima-foto-resep-utama.webp" onerror="imgError(this);" alt="Gambar" />
+        <div class="text">
+          <small>Nasi Goreng Kecap Seafood • Warung Losari</small>
           <h3>Rp 15000</h3>
         </div>
       </div>
       <div class="items">
-        <img src="http://images.foodmento.com/U2228P4901F19671-1413867245-f13.jpg" onerror="imgError(this);" alt="Gambar" />
+        <img src="https://img-global.cpcdn.com/recipes/4b7d8f66918b4553/1502x1064cq70/nasi-kuning-ultahmagic-com-foto-resep-utama.webp" onerror="imgError(this);" alt="Gambar" />
         <div class="text">
-          <small>Nasi Goreng Merah • Warung Losari</small>
-          <h3>Rp 20000</h3>
+          <small>Nasi Kuning Ayam • Warung Ismi</small>
+          <h3>Rp 10000</h3>
         </div>
       </div>
       <div class="items">
-        <img src="https://img.qraved.co/v2/image/data/1494847781887-12357688_204849953190382_802855418_n-m.jpg" onerror="imgError(this);" alt="Gambar" />
+        <img src="https://img-global.cpcdn.com/recipes/57c2facbfb0ab469/1502x1064cq70/mie-goreng-ala-pinggir-jalan-foto-resep-utama.webp" onerror="imgError(this);" alt="Gambar" />
         <div class="text">
-          <small>Coto Campur • Aroma Coto Gagak</small>
+          <small>Mie Goreng • Lesehan Fiqri</small>
           <h3>Rp 15000</h3>
-        </div>
-      </div>
-      <div class="items">
-        <img src="https://www.inibaru.id/nuploads/1/umum/1504517599101-mie_titi.jpg" onerror="imgError(this);" alt="Gambar" />
-        <div class="text">
-          <small>Mie Titi • Mie Titi Datu Museng</small>
-          <h3>Rp 25000</h3>
         </div>
       </div>
     </div>
     <div class="product-btn_more">
-      <button>View more menu</button>
+      <button>Lihat lebih banyak menu</button>
     </div>
   </div>
-
+  <br />
   <div class="product">
     <div class="thumbnail_event" id="te_cb100">
       <img src="https://accurateonline.id/wp-content/uploads/2020/11/Promo-Cashback-100.png" alt="" />
@@ -143,38 +163,38 @@
     </div>
     <div class="event_container" id="cb100">
       <div class="items">
-        <img src="https://fastly.4sqi.net/img/general/200x200/4665150_uD0oVyugNYPUzXXhQ31tWYKiUshoVdeiozPZcLPUmxs.jpg" onerror="imgError(this);" alt="Gambar" />
+        <img src="https://asset.kompas.com/crops/mHMoVY5SdTeHWTilDGLQ9QYFKQE=/0x41:720x521/750x500/data/photo/2020/04/02/5e85ea6d464a4.jpeg" onerror="imgError(this);" alt="Gambar" />
         <div class="text">
-          <h3>Songkolo Bagadang</h3>
-          <small>Jl. Antang Raya Pannara No.19</small>
+          <h3>Warteg Amanah</h3>
+          <small>Jl. Ki Hajar Dewantara No.23 (Dekat Bank BCA)</small>
         </div>
       </div>
       <div class="items">
-        <img src="https://fastly.4sqi.net/img/general/200x200/4709981_wJqXugezzN970DqjuadGBNyz6idDHh83YVcU-PqR0P0.jpg" onerror="imgError(this);" alt="Gambar" />
+        <img src="https://indonesia.go.id/assets/img/content_image/1542097948_Warteg_dan_Fenomena_Urbanisasi_(Bagian1)_sportourismid.jpg" onerror="imgError(this);" alt="Gambar" />
         <span class="ribbon"></span>
         <div class="text">
-          <h3>Kios Lagaligo</h3>
-          <small>Jl. Arief Rate No.1 (Depan RSB Catherine Booth)</small>
+          <h3>Warteg Gang Mangga</h3>
+          <small>Jl. Pendidikan Gg. Mangga No.4</small>
         </div>
       </div>
       <div class="items">
-        <img src="https://fastly.4sqi.net/img/general/200x200/4978822_3HaKzQDDg7bCQy5-Vu4t7MzAgMRXVaOD-DYL41GcmGY.jpg" onerror="imgError(this);" alt="Gambar" />
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/08/7b/d8/7c/soto-ayam-cak-sam-suroboyo.jpg" onerror="imgError(this);" alt="Gambar" />
         <span class="ribbon"></span>
         <div class="text">
-          <h3>Soto Ayam Cak Har</h3>
-          <small>Jl. Landak Baru No.95 A/B</small>
+          <h3>Soto Ayam Cak Sam Suroboyo</h3>
+          <small>Jl. Adiyaksa Baru No.1</small>
         </div>
       </div>
       <div class="items">
-        <img src="https://cdn.tasteatlas.com/images/restaurants/219aa5135aba48e3b119beec1e1d4150.jpg" onerror="imgError(this);" alt="Gambar" />
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/08/4f/1e/9b/ayam-penyet-pak-tjomot.jpg" onerror="imgError(this);" alt="Gambar" />
         <div class="text">
-          <h3>Coto Dg. Sirua (Asuhan H.Singara)</h3>
-          <small>Jl. Abd. Dg. Sirua No.10</small>
+          <h3>Ayam Penyet Pak Tjomot</h3>
+          <small>Jl. Boulevard Panakukang</small>
         </div>
       </div>
       <div class="more">
         <div class="text" id="tnm_more">
-          <h3>Cashback terms and conditions<i class="uil uil-angle-right-b"></i></h3>
+          <h3>Baca lengkap dulu promonya<i class="uil uil-angle-right-b"></i></h3>
         </div>
       </div>
     </div>
@@ -191,7 +211,7 @@
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", function() {
         navigator.serviceWorker
-        .register("/serviceWorker.js")
+        .register("serviceWorker.js")
         .then(res => console.log("service worker registered"))
         .catch(err => console.log("service worker not registered", err))
       })

@@ -1,14 +1,14 @@
-const staticAlamangan = "alamangan-site-v1"
+const staticMangan = "Mangan-site-v1"
 const assets = [
   "/",
-  "/index.html",
-  "/css/index.css",
-  "/js/index.js"
+  "index.html",
+  "css/index.css",
+  "js/index.js"
 ]
 
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
-    caches.open(staticAlamangan).then(cache => {
+    caches.open(staticMangan).then(cache => {
       cache.addAll(assets)
     })
   )
