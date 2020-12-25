@@ -2,8 +2,6 @@ var CACHE_NAME = 'mangan-cache-v4';
 var urlsToCache = [
   '/',
   'index.html',
-  '/index.html',
-  'auth.html',
   '/auth.html'
 ];
 
