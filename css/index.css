@@ -39,7 +39,7 @@
   color: #EC4943;
 }
 .header .balance h2:before {
-  content: "Balance";
+  content: "Saldo";
   font-size: .8rem;
   color: black;
   position: absolute;
@@ -56,7 +56,7 @@
   color: #EC4943;
 }
 .header .balance p:before {
-  content: "Bonus Balance: ";
+  content: "Saldo Bonus: ";
   font-size: .8rem;
   font-weight: 500;
   color: black;
