@@ -19,6 +19,10 @@ $(document).ready(function() {
     $(this).siblings('.items').removeClass('active');
     $(this).addClass('active');
   });
+
+  $('#nav_akun').click(function() {
+    window.location.href = "auth.html"
+  });
 });
 
 document.addEventListener('touchstart',
@@ -79,7 +83,7 @@ var macy = Macy({
 
 function imgError(image) {
   image.onerror = "";
-  image.src = "gtt.png";
+  image.src = "img/gtt.png";
   return true;
 }
 
