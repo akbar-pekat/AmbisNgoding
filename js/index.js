@@ -5,8 +5,13 @@ $(".bottom_bars").click(function() {
 
 $("#tnm_more").click(function() {
   $(".modal_container").fadeIn();
+  $("#skp").show();
+  $("#norantplease").hide();
 });
 $("#understand").click(function() {
+  $(".modal_container").fadeOut();
+});
+$("#okaynrp").click(function() {
   $(".modal_container").fadeOut();
 });
 
@@ -24,7 +29,10 @@ $(document).ready(function() {
     window.location.href = "auth.html"
   });
   $('#nav_pesan').click(function() {
-    window.location.href = "order.html"
+    $(".modal_container").fadeIn();
+    $("#skp").hide();
+    $("#norantplease").show();
+    //window.location.href = "order.html"
   });
 });
 
