@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
   <!-- Primary Meta Tags -->
-  <title>[ORDER] Mangan - Platform Pesan Makanan Online</title>
+  <title>[404] Mangan - Platform Pesan Makanan Online</title>
   <meta name="title" content="Mangan - Platform Pesan Makanan Online">
   <meta name="description" content="Mangan adalah platform untuk memesan makanan maupun minuman secara online.">
 
@@ -26,7 +26,22 @@
 
   <!--CSS/Link tag-->
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/order.css">
+  <style type="text/css" media="all">
+    .btn_tohome {
+      padding: .5rem 1rem 1rem;
+      display: flex;
+      justify-content: center;
+    }
+    .btn_tohome button {
+      padding: .6rem .7rem;
+      background-color: #EC4943;
+      color: white;
+      border-radius: 50px;
+      border: 0;
+      outline: none;
+      font-weight: 500;
+    }
+  </style>
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/line.css">
   <link rel="manifest" href="manifest.json" />
   <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
@@ -37,43 +52,24 @@
     <img src="img/loader.gif" alt="loading_img" />
   </div>
 
-  <!--Navbottom-->
-  <div class="bottom_bars"></div>
-  <div class="bottom_container">
-    <div class="content">
-      <div id="nav_beranda" class="items" data-name="Beranda">
-        <i class="uil uil-apps"></i>
-      </div>
-      <div class="items active" data-name="Pesanan">
-        <i class="uil uil-receipt"></i>
-      </div>
-      <div id="nav_akun" class="items" data-name="Akun">
-        <i class="uil uil-user"></i>
-      </div>
-    </div>
-  </div>
-
   <div style="padding: .5rem 1rem">
-    <h2>Aelah kak...</h2>
+    <h2>Mau kemana sih kak?</h2>
     <p>
-      Kan apa aku kata, disini gak ada apa-apa masih kosongan, gak ada yg perlu di komentarin dulu
+      Kakak tersesat nih, emang mau kemana? Kita ke beranda aja yuk kak
     </p>
   </div>
-
-  <div class="tabs_container" hidden>
-    <div class="group">
-      <div class="items">
-        <h2>Pesanan Aktif</h2>
-      </div>
-      <div class="items">
-        <h2>Riwayat Pesanan</h2>
-      </div>
-    </div>
+  <div class="btn_tohome">
+    <button>Kembali ke jalan yang benar</button>
   </div>
 
   <!--Script tag-->
   <script src="main.js" type="text/javascript" charset="utf-8"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script type="text/javascript" charset="utf-8">
+    $('.btn_tohome').click(function() {
+      window.location.href = "index.html"
+    });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
   <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
   <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
