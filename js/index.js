@@ -23,6 +23,9 @@ $(document).ready(function() {
   $('#nav_akun').click(function() {
     window.location.href = "auth.html"
   });
+  $('#nav_pesan').click(function() {
+    window.location.href = "order.html"
+  });
 });
 
 document.addEventListener('touchstart',
