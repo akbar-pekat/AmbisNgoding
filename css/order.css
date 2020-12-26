@@ -1,0 +1,11 @@
+.tabs_container .group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tabs_container .group .items {
+  padding: .5rem .6rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: .8rem;
+}
