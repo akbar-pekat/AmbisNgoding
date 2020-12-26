@@ -1,0 +1,5 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target" : { "namespace": "android_app", "package_name": "xyz.ambisngoding.twa",
+                   "sha256_cert_fingerprints": ["2F:C4:FB:72:CA:06:66:3E:5F:6F:30:47:59:D0:FE:A0:C8:72:67:37:DC:0A:07:40:66:71:92:8D:8A:33:C8:5C"] }
+    }]
